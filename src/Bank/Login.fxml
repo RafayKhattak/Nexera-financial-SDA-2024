@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bank.LoginController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #2A2B30;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="242.0" prefHeight="18.0" prefWidth="300.0" text="Nexera Financial" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="200.0" prefHeight="200.0" prefWidth="300.0" text="Bank Management System" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="122.0" layoutX="151.0" layoutY="279.0" startX="-122.0" stroke="WHITE" strokeWidth="2.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Circle fill="#1f93ff00" layoutX="151.0" layoutY="272.0" opacity="0.45" radius="145.0" stroke="#00fcff" strokeType="INSIDE" strokeWidth="2.0" />
+            <Label alignment="CENTER" layoutX="6.0" layoutY="562.0" prefHeight="50.0" prefWidth="300.0" text="Made by ArchWares." textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="6.0" layoutY="562.0" prefHeight="18.0" prefWidth="300.0" text="Copyright 2024 (c). All Rights Reserved." textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="114.0" prefHeight="30.0" prefWidth="445.0" text="Secure Login">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label layoutX="92.0" layoutY="230.0" text="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="273.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="196.0" layoutY="230.0" promptText="Enter Username..." />
+            <PasswordField fx:id="passwordField" layoutX="196.0" layoutY="274.0" promptText="Enter Password..." />
+            <Button fx:id="loginButton" layoutX="92.0" layoutY="344.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="44.0" prefWidth="261.0" style="-fx-background-color: #2A2B30;" text="Login" textFill="WHITE" />
+            <Button fx:id="cancelButton" layoutX="92.0" layoutY="423.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="44.0" prefWidth="261.0" style="-fx-background-color: #5a5a5e;" text="Cancel" textFill="WHITE" />
+            <Button fx:id="createNewUserButton" layoutX="92.0" layoutY="502.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="44.0" prefWidth="261.0" style="-fx-background-color: #5a5a5e;" text="Create New User" textFill="WHITE" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="173.0" prefHeight="27.0" prefWidth="445.0" textFill="#cd0101">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

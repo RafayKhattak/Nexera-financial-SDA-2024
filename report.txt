@@ -1,0 +1,5 @@
+TransactionID	AccountNumber	TransactionDate	DueDate	Amount	Reason
+T1		1		2024-11-27 18:40:57	N/A	1000.00		Deposit
+T2		1		2024-11-27 18:40:57	N/A	-500.00		Withdrawal
+T3		2		2024-11-27 18:40:57	N/A	2000.00		Deposit
+T4		3		2024-11-27 18:40:57	2023-12-31 00:00:00	-750.00		Loan Payment
